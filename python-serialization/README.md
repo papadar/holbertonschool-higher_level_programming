@@ -1,2 +1,2 @@
 # python serialisation doc
-serialise the data
+serialise & deserialise the data

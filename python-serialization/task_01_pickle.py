@@ -21,7 +21,6 @@ class CustomObject:
         """This is the serialise method"""
         with open(filename, "wb") as file:
             pickle.dump(self, file)
-        pass
 
     @classmethod
     def deserialize(cls, filename):
@@ -31,6 +30,14 @@ class CustomObject:
                 data = pickle.load(file)
                 obj = cls(data.name, data.age, data.is_student)
                 return obj
-        except (FileNotFoundError, TypeError):
+        except (
+            FileNotFoundError,
+            TypeError,
+            EOFError,
+            pickle.UnpicklingError,
+            AttributeError,
+            ImportError,
+            IndexError,
+            ValueError
+        ):
             return None
-        pass

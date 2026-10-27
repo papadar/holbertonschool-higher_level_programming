@@ -8,4 +8,4 @@ CREATE TABLE IF NOT EXISTS states (
 );
 INSERT INTO states (name) VALUES ("California"), ("Arizona"), ("Texas"), ("New York"), ("Nevada");
 
-SELECT * FROM states ORDER BY id ASC
+-- SELECT * FROM states ORDER BY id ASC

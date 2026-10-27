@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""filters states from database hbtn_0e_0_usa"""
+"""filters states from given database
+returns results where N is first char
+"""
 import MySQLdb
 import sys
 

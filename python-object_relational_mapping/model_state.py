@@ -16,6 +16,7 @@ class State(Base):
                 nullable=False, unique=True)
     name = Column(String(128), nullable=False)
 
+
 if __name__ == "__main__":
     engine = create_engine(
         "mysql+mysqldb://{}:{}@localhost:3306/{}".format(

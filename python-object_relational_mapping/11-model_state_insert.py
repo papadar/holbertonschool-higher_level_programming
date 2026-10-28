@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Adds a given state object to the provided db
+"""Adds Louisiana state object to the provided db
 """
 import sys
 from sqlalchemy import create_engine
@@ -17,7 +17,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    new_state = State(name=sys.argv[4])
+    new_state = State(name="Louisiana")
     session.add(new_state)
     session.commit()
     print(new_state.id)

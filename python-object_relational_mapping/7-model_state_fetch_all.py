@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Lists all State objects from the database hbtn_0e_6_usa
+"""Lists all State objects from the given database
 """
 import sys
 from sqlalchemy import create_engine

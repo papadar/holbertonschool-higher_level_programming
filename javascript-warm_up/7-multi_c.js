@@ -1,7 +1,10 @@
 #!/usr/bin/node
-const code = ['C', 'Python', 'JavaScript'];
-const good = ['fun', 'cool', 'amazing'];
+const num = parseInt(process.argv[2], 10);
 
-for (let i = 0; i < 3; i++) {
-  console.log(code[i], 'is', good[i]);
+if (!Number.isNaN(num)) {
+  for (let i = 0; i < num; i++) {
+    console.log('C is fun');
+  }
+} else {
+  console.log('Missing number of occurrences');
 }
